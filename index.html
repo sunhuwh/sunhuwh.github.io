@@ -1,42 +1,55 @@
 ---
-title: No Silver Bullet 
-layout: default
+layout: page
+description: "在遙遠的地方 一切虔誠終必相遇"
 ---
+
 {% for post in paginator.posts %}
-<div class="post">
-    <div class="posttext">
-        <div class="posttitle">
-            <a href="{{ post.url }}">{{ post.title }}</a><hr>
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:150 }}
         </div>
-        <p> {{ post.excerpt | strip_html }} </p>
-    </div>
-    <div class="postfooter">
-        <div class="postdate">
-            <a href="/archives.html#{{ post.date | date:"%Y 年 %m 月" }}"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;{{ post.date | date_to_string }}</a>
-        </div>
-        <div class="posttags">
-            {% for tag in post.tags %}
-            <a href="/tags.html#{{ tag }}">{{ tag }}&nbsp;&nbsp;</a>
-            {% endfor %}
-            <a href="/tags.html"><i class="fa fa-tags"></i></a>
-        </div>
-    </div>
+    </a>
+    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
+
+<hr>
 {% endfor %}
-<!-- 分页器 -->
-<div class="switchpage">
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
     {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a href="../"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;上 • 一页</a>
-    {% else %}
-    <a href="/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;上 • 一页</a>
-    {% endif %}
-    {% else %}
-    <a><i class="fa fa-chevron-left"></i>&nbsp;&nbsp;上 • 尽头</a>
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
     {% endif %}
     {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}">下 • 一页&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
-    {% else %}
-    <a>下 • 尽头&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
     {% endif %}
-</div>
+</ul>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66863061-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+{% endif %}
