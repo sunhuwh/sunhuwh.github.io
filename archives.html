@@ -1,0 +1,38 @@
+---
+title: 归档
+layout: default
+---
+<div class="posttext" style="margin-bottom: 20px;">
+    <div class="posttitle">
+        <a href="{{ page.url }}"><i class="fa fa-archive"></i>&nbsp;&nbsp;归档</a><hr>
+    </div>
+    <ul>
+        {% for post in site.posts %}
+        {% capture y %}{{ post.date | date:"%Y 年" }}{% endcapture %}
+        {% if year != y %}
+        {% assign year = y %}
+        <li><a href="#{{ y }}">{{ y }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<div class="post">
+    <div class="posttext">
+        <ul>
+            {% for post in site.posts %}
+            {% capture y %}{{ post.date | date:"%Y 年" }}{% endcapture %}
+            {% if year != y %}
+            {% assign year = y %}
+            </ul>
+            <blockquote id="{{ y }}">{{ y }}</blockquote>
+            <ul>
+            {% endif %}
+            <li>
+            <time datetime="{{ post.date }}">{{ post.date | date:"%m 月 %d 日" }}</time>
+            <a href="{{ post.url }}" title="{{ post.title }}">&nbsp;&nbsp;{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="postfooter"></div>
+</div>
