@@ -1,10 +1,9 @@
 ---
 layout: page
-title: "Travel"
-description: "路与风景"
-header-img: "img/plane2.jpg"
+title: "Biking"
+description: "骑上单车看风景"
+header-img: "img/bike.jpg"
 ---
 
 
 
-我的 [蝉游记](http://chanyouji.com/users/448398)
