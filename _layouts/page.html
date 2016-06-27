@@ -3,8 +3,8 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{% if header.http-header-img %}{{header.http-header-img}} {% elseif page.header-img%}{{ site.baseurl }}/{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ site.header-img }}{% endif %}')">
-    {% if header.http-header-img %}http-header-img{%elseif page.header-img %}header-img{%else%}other{%endif%}}
+<header class="intro-header" style="background-image: url('{% if page.http-img%}{{page.http-img]}}{% else if header.header-img %}{{ site.baseurl }}/{{header.header-img}} {% else %}{{ site.baseurl }}/{{ site.header-img }}{% endif %}')">
+    
 	<div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
