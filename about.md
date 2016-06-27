@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 description: "about me"
-header-img: "img/plane.jpg"
+http-header-img: "http://o9f52cbyk.bkt.clouddn.com/biking2.jpg"
 ---
 
 <center>
