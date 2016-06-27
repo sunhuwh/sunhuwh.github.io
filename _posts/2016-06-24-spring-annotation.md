@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 外国文学中译本汇编
-categories: [blog ]
-tags: [book, list, ]
-description: 对于运输水果来说，保鲜效果是非常重要的，就翻译而言，好翻译总是妙在难言。
+title: springmvc-annotation
+categories: [spring ]
+tags: [springmvc ]
+description: springmvc annotation思维导图。
 ---
-![](http://i.imgur.com/BjzPpSf.png)
+![](http://o9f52cbyk.bkt.clouddn.com/Spring%E6%B3%A8%E8%A7%A3.png)
