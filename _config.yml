@@ -1,25 +1,25 @@
 # Site settings
-title: Microdust
+title: Biking
 header-img: "img/autumn2.jpg"
-tagline: "coding"  
-description: "骑上单车看风景"  
+tagline: "Biking for us"  
+description: "骑上单车去看风景"  
 baseurl: ""
-url: "http://sunhuwh.github.io"  
+url: "http://sunhuwhu.github.io"  
 #url: "http://localhost:4000"
 
 # About/contact
 owner: 
   name: "sunhuwh"
-  email: 
-  bio: "骑上单车看风景"
+  email: sunhuwh1992@gmail.com
+  bio: "coding on biking"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.ico
 
 douban_username: 
-twitter_username:  
-github_username: sunhuwh  
+twitter_username:   
+github_username:   sunhuwh
 facebook_username:   
 weibo_username:   
 zhihu_username:   
@@ -40,7 +40,7 @@ paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
+timezone: Asia/WuHan
 
 # Title
 
@@ -59,11 +59,11 @@ defaults:
 
 # Comments 
 #comments :
- # provider : duoshuo
-  #duoshuo :
-   # short_name : Azeril
-  #disqus :
-   #   short_name : Azeril
+#  provider : duoshuo
+#  duoshuo :
+#    short_name : Azeril
+#  disqus :
+#      short_name : Azeril
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-66863061-1

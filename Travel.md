@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Biking"
-description: "骑上单车看风景"
-header-img: "img/bike.jpg"
+title: "Travel"
+description: "my map"
+header-img: "img/plane2.jpg"
 ---
 
 
