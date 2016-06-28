@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Categories
+title: CATEGORYIES
 description: "分类整理"
 http-img: "http://o9f52cbyk.bkt.clouddn.com/fengjing.jpg"
 ---
