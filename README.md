@@ -1,6 +1,6 @@
-# biking 代码单车
+# Coding！！ Thinking in coding
 
-This is a blog created by Azeril. The blog is live at [sunhuwh.github.io](http://sunhuwh.github.io).
+The blog is live at [sunhuwh.github.io](http://sunhuwh.github.io).
 
 ## Thanks
 
@@ -16,13 +16,7 @@ The blog used many tool/service,many thanks to:
 * [Google](http://google.com), the one who tell me how to make it.
 * …
 
-[Build-Your-First-GitHub-Pages-Blog](https://sunhuwh.github.io/jekyll/update/welcome-to-jekyll.html)
-
-## Who help me creat A Jekyll Blog
-
-http://azeril.me/blog/Build-Your-First-GitHub-Pages-Blog.html
-
-Build your blog Step by step
+[Build-Your-First-GitHub-Pages-Blog](https://sunhuwh.github.io/index.html)
 ## Just write
 
 Start writing now！
