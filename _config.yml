@@ -1,8 +1,8 @@
 # Site settings
-title: Biking
+title: Thinking
 header-img: "img/autumn2.jpg"
 tagline: "Biking for us"  
-description: "骑上单车去写代码"  
+description: "Thinking in coding"  
 baseurl: ""
 url: "http://sunhuwhu.github.io"  
 #url: "http://localhost:4000"
