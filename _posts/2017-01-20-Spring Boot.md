@@ -2,12 +2,12 @@
 layout: post
 title: Spring Boot 教程 1
 date: 2017-01-20 18:54
-categories: [Spring Boot教程]
+categories: [Spring Boot]
 tags: [Spring Boot]
 ---
 Spring Boot作为一个目前非常流行的框架，给我们带来了很多的方便：
 
-####1.在很短的时间就可以开发项目，着重代码，免于XML的配置（虽然spring目前已经支持免XML配置），但是Spring Boot更为简洁。@EnableAutoConfiguration注解使应用用一种特定的方式进行配置。
+#### 1.在很短的时间就可以开发项目，着重代码，免于XML的配置（虽然spring目前已经支持免XML配置），但是Spring Boot更为简洁。@EnableAutoConfiguration注解使应用用一种特定的方式进行配置。
 
 现在我们创建一个maven项目:
 
@@ -97,9 +97,9 @@ mvn archetype:generate -DgroupId=com.test.demo -DartifactId=demo -DpackageName=c
 浏览器访问localhost:8080
 
 
-####2.目前微服务非常的流行，而Spring Boot开发微服务非常的快。RestFul，并且可以不用我们自己准备tomcat（等等容器），可以打包成jar包，直接独立运行。
+#### 2.目前微服务非常的流行，而Spring Boot开发微服务非常的快。RestFul，并且可以不用我们自己准备tomcat（等等容器），可以打包成jar包，直接独立运行。
 
-####3.各种starter，使得使用起来非常方便，
+#### 3.各种starter，使得使用起来非常方便，
 
 比如数据库的spring-boot-starter-jdbc，spring-boot-starter-data-jpa...
 
