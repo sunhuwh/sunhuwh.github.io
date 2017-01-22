@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Boot 教程 1
+title: Spring Boot Day1--first application
 date: 2017-01-20 18:54
 categories: [Spring Boot]
 tags: [Spring Boot]
