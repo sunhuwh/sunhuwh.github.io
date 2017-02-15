@@ -99,7 +99,7 @@ mvn archetype:generate -DgroupId=com.test.demo -DartifactId=demo -DpackageName=c
 
 注意pom中我配置了一个：<start-class>sample.web.beetl.Application</start-class>
 
-<start-class>中配置的是启动类，在用mvn spring-boot:run运行的时候需要用到这个。启动类需要自己配置。
+	<start-class>中配置的是启动类，在用mvn spring-boot:run运行的时候需要用到这个。启动类需要自己配置。
 
 
 #### 2.目前微服务非常的流行，而Spring Boot开发微服务非常的快。RestFul，并且可以不用我们自己准备tomcat（等等容器），可以打包成jar包，直接独立运行。
